@@ -80,8 +80,6 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-		<docker.registry>registry.pr-dads-internal.com</docker.registry>
-		<imageEnvTag>dev</imageEnvTag>
 	</properties>
     <dependencies>
 	  <dependency>
@@ -319,15 +317,12 @@
 						<artifactId>docker-maven-plugin</artifactId>
 						<version>0.4.13</version>
 						<configuration>
-						<baseImage>${docker.registry}/art-saas/utility/openjdk:${imageEnvTag}</baseImage> 
-						<imageName>${docker.registry}/art-saas/CAS</imageName>
+						<baseImage>openjdk</baseImage> 
+						<imageName>CAS</imageName>
 						<entryPoint>["/entrypoint.sh"]</entryPoint>
 						<exposes>
 							<expose>8080</expose>
 						</exposes>
-						<imageTags>								
-							<imageTag>${imageEnvTag}</imageTag>
-						</imageTags>
 						<pushImageTag>true</pushImageTag>
 						<runs>
 							<run>mkdir -p /etc/cas</run>
