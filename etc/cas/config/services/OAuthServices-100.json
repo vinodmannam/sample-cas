@@ -1,0 +1,12 @@
+{
+  "@class" : "org.apereo.cas.support.oauth.services.OAuthRegisteredService",
+  "clientId": "clientid",
+  "clientSecret": "clientSecret",
+  "serviceId" : "http://localhost:9090/client/",
+  "name" : "OAuthService",
+  "id" : 100,
+  "bypassApprovalPrompt": true,
+  "generateRefreshToken": false,
+  "jsonFormat": true,
+  "supportedGrantTypes": [ "java.util.HashSet", ["password","client_credentials","refresh_token","authorization_code"] ]
+}

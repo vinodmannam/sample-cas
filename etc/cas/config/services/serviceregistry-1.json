@@ -1,0 +1,17 @@
+{
+    "services":[
+        {
+            "id":1,
+            "serviceId": "https://cas.example.org/idp",
+            "name":"Sample_testing",
+            "description":"Test service with ant-style pattern matching",
+            "theme":"cas-theme-default",
+            "allowedToProxy":true,
+            "enabled":true,
+            "ssoEnabled":true,
+            "anonymousAccess":false,
+            "evaluationOrder":1,
+            "allowedAttributes":["uid", "mail"]
+	}
+    ]
+}

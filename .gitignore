@@ -1,0 +1,13 @@
+/.settings/
+/.classpath
+/.project
+/target/
+.idea/
+overlays/
+build/
+bin/
+.DS_Store
+.idea
+*.iml
+*.log
+thekeystore
